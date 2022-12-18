@@ -1,0 +1,2 @@
+font : Inika
+font any number:Inter

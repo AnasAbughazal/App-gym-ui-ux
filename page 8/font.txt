@@ -1,0 +1,2 @@
+font : Inika
+font stars :Inter

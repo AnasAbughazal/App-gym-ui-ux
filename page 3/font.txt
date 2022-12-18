@@ -1,0 +1,2 @@
+font Title : Inika
+font Button : IM FELL French Canon
