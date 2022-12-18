@@ -1,0 +1,18 @@
+/* SCSS HEX */
+$shuttle-gray: #5c606a;
+$trout: #4e525c;
+$white: #ffffff;
+$mine-shaft: #1f1f1f;
+$dodger-blue: #1495ef;
+$gold: #ffd700;
+
+
+/* SCSS RGB */
+--shuttle-gray: rgba(92,96,106,255,1);
+--trout: rgba(78,82,92,255,1);
+--white: rgba(255,255,255,255,1);
+--mine-shaft: rgba(31,31,31,255,1);
+--dodger-blue: rgba(20,149,239,1);
+--gold: rgba(255,215,0,255,1);
+
+

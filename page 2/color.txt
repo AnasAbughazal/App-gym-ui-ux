@@ -1,0 +1,12 @@
+/* SCSS HEX */
+$mirage: #151b28;
+$viking: #65b6d6;
+$white: #ffffff;
+
+
+/* SCSS RGB */
+--mirage: rgba(21,27,40,255,1);
+--viking: rgba(101,182,214,255,1);
+--white: rgba(255,255,255,255,1);
+
+

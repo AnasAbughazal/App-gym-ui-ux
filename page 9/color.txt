@@ -1,0 +1,18 @@
+/* SCSS HEX */
+$trout: #4e525c;
+$mine-shaft: #1f1f1f;
+$bombay: #b1b3b7;
+$white: #ffffff;
+$iron: #d6d6d9;
+$red: #ff0000;
+
+
+/* SCSS RGB */
+--trout: rgba(78,82,92,255,1);
+--mine-shaft: rgba(31,31,31,255,1);
+--bombay: rgba(177,179,183,255,1);
+--white: rgba(255,255,255,255,1);
+--iron: rgba(214,214,217,255,1);
+--red: rgba(255,0,0,255,1);
+
+

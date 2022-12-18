@@ -1,0 +1,18 @@
+/* SCSS HEX */
+$concord: #7d7b7a;
+$mustard: #fed954;
+$white: #ffffff;
+$trout: #4d515b;
+$viking: #6abbda;
+$bombay: #b5b6b9;
+
+
+/* SCSS RGB */
+--concord: rgba(125,123,122,255,1);
+--mustard: rgba(254,217,84,255,1);
+--white: rgba(255,255,255,255,1);
+--trout: rgba(77,81,91,255,1);
+--viking: rgba(106,187,218,255,1);
+--bombay: rgba(181,182,185,255,1);
+
+

@@ -1,0 +1,9 @@
+/* SCSS HEX */
+$shuttle-gray: #5c606a;
+$black: #010101;
+
+
+/* SCSS RGB */
+--shuttle-gray: rgba(92,96,106,255,1);
+--black: rgba(1,1,1,255,1);
+

@@ -1,0 +1,18 @@
+/* SCSS HEX */
+$concord: #7d7b7a;
+$energy-yellow: #f9d655;
+$white: #ffffff;
+$viking: #6dbedd;
+$scarpa-flow: #595a60;
+$mako: #484c55;
+
+
+/* SCSS RGB */
+--concord: rgba(125,123,122,255,1);
+--energy-yellow: rgba(249,214,85,255,1);
+--white: rgba(255,255,255,255,1);
+--viking: rgba(109,190,221,255,1);
+--scarpa-flow: rgba(89,90,96,255,1);
+--mako: rgba(72,76,85,255,1);
+
+

@@ -1,0 +1,16 @@
+/* SCSS HEX */
+$shuttle-gray: #5c606a;
+$trout: #4e525c;
+$guardsman-red: #bf0000;
+$white: #ffffff;
+$black: #000000;
+
+
+/* SCSS RGB */
+--shuttle-gray: rgba(92,96,106,255,1);
+--trout: rgba(78,82,92,255,1);
+--guardsman-red: rgba(191,0,0,255,1);
+--white: rgba(255,255,255,255,1);
+--black: rgba(0,0,0,255,1);
+
+

@@ -1,0 +1,14 @@
+/* SCSS HEX */
+$concord: #7d7b7a;
+$mid-gray: #5e5f64;
+$cod-gray: #181818;
+$white: #ffffff;
+
+
+/* SCSS RGB */
+--concord: rgba(125,123,122,255,1);
+--mid-gray: rgba(94,95,100,255,1);
+--cod-gray: rgba(24,24,24,255,1);
+--white: rgba(255,255,255,255,1);
+
+
