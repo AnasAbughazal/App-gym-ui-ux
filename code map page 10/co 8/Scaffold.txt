@@ -1,0 +1,89 @@
+@override
+  Widget build(BuildContext context) {
+    return  Scaffold(
+      body: GoogleMap(
+        zoomGesturesEnabled: true,
+        zoomControlsEnabled: false,
+        initialCameraPosition: CameraPosition(
+          target: endLocation,
+          zoom: 16.0,
+        ),
+        markers: markers,
+        polylines: Set<Polyline>.of(polylines.values),
+        mapType: MapType.normal,
+        onMapCreated: (GoogleMapController controller){
+          _controller.complete(controller);
+        },
+      ),
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.only(left: 305.0,top: 0.0,right: 0,bottom: 0),
+        child: FloatingActionButton(
+          onPressed: () async{
+            getUserCurrentLocation().then((value) async {
+              print(value.latitude.toString() +" "+value.longitude.toString());
+
+
+              markers.add(
+                  Marker(
+                    markerId: MarkerId(startLocation.toString()),
+                    position: LatLng(value.latitude, value.longitude),
+                    infoWindow: const InfoWindow(
+                      title: 'نقطة البداية',
+                    ),
+                  )
+              );
+             late LatLng startLocation2 = LatLng(value.latitude, value.longitude);
+              mylatitude=value.latitude;
+              mylongitude=value.longitude;
+              //32.02121683509093, 36.086042458303794
+              // specified current users location
+              CameraPosition cameraPosition = CameraPosition(
+                target: LatLng(value.latitude, value.longitude),
+                zoom: 14,
+              );
+
+              final GoogleMapController controller = await _controller.future;
+              controller.animateCamera(CameraUpdate.newCameraPosition(cameraPosition));
+              getDirections(); //fetch direction polylines from Google API
+              setState(() {
+              });
+
+            });
+          },
+          child: const Icon(Icons.location_on),
+        ),
+      ),
+      extendBody: true,
+      bottomNavigationBar: CurvedNavigationBar(
+          //backgroundColor: Color.fromRGBO(255, 255, 255, 1),
+          backgroundColor: Colors.transparent,
+          color: const Color.fromRGBO(92, 96, 106, 1),
+          height: 50,
+          animationDuration: const Duration(
+              milliseconds: 200
+          ),
+          items: const [
+            Icon(Icons.home,size: 30,color: Color.fromRGBO(1, 1, 1, 1),),
+            Icon(Icons.favorite,size: 30,color: Color.fromRGBO(1, 1, 1, 1),),
+            Icon(Icons.search,size: 30,color:Color.fromRGBO(1, 1, 1, 1),),
+            Icon(Icons.map,size: 30,color: Color.fromRGBO(1, 1, 1, 1),),
+            Icon(Icons.person,size: 30,color: Color.fromRGBO(1, 1, 1, 1),),
+          ],
+          onTap: (index){
+            if(index ==0){
+              setState((){} );
+            }
+            else if(index ==1){
+              setState((){});
+            }
+            else if(index ==3){
+              setState((){ });
+            }
+            else if(index ==4){
+              setState((){});
+            }
+
+          }
+      ),
+    );
+  }

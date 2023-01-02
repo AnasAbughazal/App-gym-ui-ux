@@ -1,0 +1,14 @@
+class _HomeState extends State<Home> {
+  
+  Completer<GoogleMapController> _controller = Completer();
+  PolylinePoints polylinePoints = PolylinePoints();
+  String googleAPiKey = "AIzaSyAJcUEn3nXs5MJb27Qm_E9dfbly3Pz31ps";
+  double mylatitude=0;
+  double mylongitude=0;
+
+  Set<Marker> markers = Set(); 
+  Map<PolylineId, Polyline> polylines = {}; 
+
+  LatLng startLocation = const LatLng(0,0);//نضع الموقع بعد التحديد هنا
+  LatLng endLocation = const LatLng(31.990731397960502, 35.95650050101077);//موقع ال gym
+

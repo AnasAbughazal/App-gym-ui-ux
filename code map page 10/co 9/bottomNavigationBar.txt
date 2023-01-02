@@ -1,0 +1,32 @@
+   extendBody: true,
+      bottomNavigationBar: CurvedNavigationBar(
+          //backgroundColor: Color.fromRGBO(255, 255, 255, 1),
+          backgroundColor: Colors.transparent,
+          color: const Color.fromRGBO(92, 96, 106, 1),
+          height: 50,
+          animationDuration: const Duration(
+              milliseconds: 200
+          ),
+          items: const [
+            Icon(Icons.home,size: 30,color: Color.fromRGBO(1, 1, 1, 1),),
+            Icon(Icons.favorite,size: 30,color: Color.fromRGBO(1, 1, 1, 1),),
+            Icon(Icons.search,size: 30,color:Color.fromRGBO(1, 1, 1, 1),),
+            Icon(Icons.map,size: 30,color: Color.fromRGBO(1, 1, 1, 1),),
+            Icon(Icons.person,size: 30,color: Color.fromRGBO(1, 1, 1, 1),),
+          ],
+          onTap: (index){
+            if(index ==0){
+              setState((){} );
+            }
+            else if(index ==1){
+              setState((){});
+            }
+            else if(index ==3){
+              setState((){ });
+            }
+            else if(index ==4){
+              setState((){});
+            }
+
+          }
+      ),

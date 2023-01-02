@@ -1,0 +1,27 @@
+  @override
+  void initState() {
+
+    /*markers.add(Marker( //add start location marker
+      markerId: MarkerId(startLocation.toString()),
+      position: startLocation, //position of marker
+      infoWindow: InfoWindow( //popup info
+        title: 'نقطة البداية ',
+        snippet: 'موقعي',
+      ),
+      icon: BitmapDescriptor.defaultMarker, 
+    ));*/
+
+    markers.add(Marker(
+      markerId: const MarkerId("2"),
+      position: endLocation, 
+      infoWindow: const InfoWindow(
+        title: 'نقطة النهاية ',
+        snippet: 'موقع ال gym',
+      ),
+      icon: BitmapDescriptor.defaultMarker, 
+    ));
+
+     //fetch direction polylines from Google API
+
+    super.initState();
+  }
